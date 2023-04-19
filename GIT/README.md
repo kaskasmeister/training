@@ -15,6 +15,10 @@ GIT COMMANDS
 
 >`git config --global user.email "dlozada77@gmail.com"`
 
+## Change default repository name (master > main)
+
+>`git config --global init.defaultBranch main`
+
 ## Editor config (Visual Studio Code as Text editor for this training)
 
 > `git config --global core.editor code`
@@ -336,15 +340,24 @@ Display all available remotes that associated with the Git repository on our loc
 
 >`git branch -M main`
 
+If you need to create a new local branch with **`main`** branch then run the follow:
+
+>`git init -b main <repository_name>`
+
 Set up remote connections to other repositories
 `add` add a new remote repo, `origin` the name of the remote we want to create, and `url` is the full URL to our remote repository.
 
 >`git remote add origin git@github.com:kaskasmeister/training.git`
 
-Let push up all our commits from the local side to the remote side. `-u` Establishes a tracking relationship between the branch we pass in, which is master, and remote side `origin` the name of the remote repository `main` is the name of the branch we wish to push.
+Let push up all our commits from the local side to the remote side. `-u` Establishes a tracking relationship between the branch we pass in, which is master, and remote side `origin` the name of the remote repository `main` is the name of the branch we wish to push. `--tags` let doing commit of tags saved in the local repo.  
 
 >`git push -u origin main` <> `--tags`
 
-# Clone Repo
+# Remove remote repository
+
+> `git remote rm <remote_brach_name>`
+
+# Cloning Repo
 
 >`git clone git@github.com:kaskasmeister/training.git`
+
