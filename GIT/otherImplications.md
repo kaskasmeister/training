@@ -89,3 +89,7 @@ Go to main and Create a new branch
 >`git cherry-pick 306f8064bc8e87a2b6e6c6265efb66da3f72d5df`
 
 >`git cherry-pick 98aeaefbd58fbe665c37477dc23d3384daa3412a`
+
+# Remove git MacOS
+
+> `sudo xcode-select --install`
