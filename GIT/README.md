@@ -316,10 +316,35 @@ Reflog (TODO)
 # Going Remote
 
 
-Clone a repo (previouly you need add a ssh key)
+Clone a repo (previouly you need add a ssh key).
 
 >`git clone git@github.com:kaskasmeister/training.git`
 
 ## Manage remote repositories
 
+Display all available remotes that associated with the Git repository on our local system.
+
 > `git remote remote -v`
+
+# Create main branch and upload updates
+
+>`git init`
+
+>`git add README.md`
+
+>`git commit -m "first commit"`
+
+>`git branch -M main`
+
+Set up remote connections to other repositories
+`add` add a new remote repo, `origin` the name of the remote we want to create, and `url` is the full URL to our remote repository.
+
+>`git remote add origin git@github.com:kaskasmeister/training.git`
+
+Let push up all our commits from the local side to the remote side. `-u` Establishes a tracking relationship between the branch we pass in, which is master, and remote side `origin` the name of the remote repository `main` is the name of the branch we wish to push.
+
+>`git push -u origin main` <> `--tags`
+
+# Clone Repo
+
+>`git clone git@github.com:kaskasmeister/training.git`
